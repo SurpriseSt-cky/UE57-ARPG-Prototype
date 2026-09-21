@@ -1,0 +1,99 @@
+# UE 工程 .gitignore
+# 参考：https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore
+# ★ 原则：只保留「人写的」东西（Source/Config/内容资产），其余全部排除
+
+# ===== 构建产物（可完全再生）=====
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# ===== IDE / 编辑器缓存 =====
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.code-workspace
+
+# 注意：.sln 由「右键 .uproject → Generate Visual Studio project files」生成，不入库
+
+# ===== 编译产物 =====
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.o
+*.a
+*.so
+*.dylib
+
+# ===== 自动生成文件 =====
+*.generated.h
+*.gen.cpp
+*.g.cs
+
+# ===== 崩溃 / 日志 =====
+*.log
+crash-*.dmp
+*.dmp
+Logs/
+Crashes/
+
+# ===== 系统文件 =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ===== 临时文件 =====
+*.tmp
+*.bak
+*.bak_*
+*.autosave
+*~
+
+# ===== 关卡自动备份 =====
+Autosaves/
+Backup/
+
+# =====================================================================
+# Content/ —— 见下方「内容资产策略」说明
+# ---------------------------------------------------------------------
+# 本仓库采用「源码优先」策略：不提交第三方美术素材。
+#
+# 第三方素材（有版权，禁止再分发到公开仓库）：
+#   Content/ParagonSparrow/            3.0 GB  Epic Games（Paragon 系列，免费素材）
+#   Content/ParagonKwang/              2.4 GB  Epic Games
+#   Content/ParagonWraith/             1.3 GB  Epic Games
+#   Content/Dragon8/                   330 MB  第三方
+#   Content/Whisper/                   100 MB  第三方
+#   Content/Rapier_AnimSet/             61 MB  第三方
+#   Content/RamsterZ_FreeAnims_Volume1/ 24 MB  第三方
+#   Content/MedievalSword/              18 MB  第三方
+#   Content/characters/Mannequins/              Epic 官方 Mannequin（随引擎）
+#
+# 获取方式见 README 的「美术资源」章节。
+# =====================================================================
+Content/ParagonSparrow/
+Content/ParagonKwang/
+Content/ParagonWraith/
+Content/Dragon8/
+Content/Whisper/
+Content/Rapier_AnimSet/
+Content/RamsterZ_FreeAnims_Volume1/
+Content/MedievalSword/
+Content/characters/Mannequins/
+
+# paragon 压缩包形式的素材（若存在）
+Content/*.zip
+Content/*.7z

@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 WutheringWaves ARPG Prototype contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+SCOPE / 适用范围
+
+This license applies ONLY to the source code (.h, .cpp, .cs) and documentation
+(.md, .txt) contained in this repository.
+
+It does NOT apply to:
+  1. Any art assets under the Content/ directory that you may obtain separately.
+     Those are governed by their own licenses (e.g. the Epic Games EULA for
+     Paragon assets, third-party marketplace terms for other packs).
+  2. Unreal Engine itself, which is licensed separately by Epic Games.
+  3. "Wuthering Waves", a registered trademark of Kuro Games. This project is
+     an independent technical study and is not affiliated with Kuro Games.
+
+本协议仅覆盖本仓库中的源代码（.h/.cpp/.cs）与文档（.md/.txt）。
+
+不覆盖：
+  1. Content/ 目录下你自行获取的美术资源 —— 适用其各自原始授权
+     （Paragon 素材适用 Epic Games EULA，其余适用各第三方商店条款）。
+  2. Unreal Engine 本体 —— 由 Epic Games 单独授权。
+  3. 《鸣潮》（Wuthering Waves）—— 库洛游戏的注册商标。本项目为独立技术研究，
+     与库洛游戏无任何关联。
+================================================================================

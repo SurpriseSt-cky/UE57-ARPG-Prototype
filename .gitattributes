@@ -1,0 +1,60 @@
+# 统一换行符：仓库里一律存 LF，检出时按平台还原
+* text=auto eol=lf
+
+# ===== 文本文件（源码 / 配置 / 文档）=====
+*.h      text diff=cpp
+*.cpp    text diff=cpp
+*.inl    text diff=cpp
+*.cs     text diff=csharp
+*.ini    text
+*.uplugin   text
+*.uproject  text
+*.json   text
+*.md     text
+*.txt    text
+*.xml    text
+*.yaml   text
+*.yml    text
+
+# ★ Build.cs / *.Target.cs 在本工程是 GBK + CRLF，不要被 git 转成 LF，
+#   否则 UBT 读取规则时可能出错。这里显式标记为二进制，git 完全不动它。
+Source/*.Target.cs        -text
+Source/**/*.Build.cs      -text
+
+# ===== 二进制资产（必须用 LFS 或完全排除）=====
+*.uasset  binary
+*.umap    binary
+*.ubulk   binary
+*.uexp    binary
+*.uptnl   binary
+*.upk     binary
+*.udk     binary
+
+# ===== 美术源文件 =====
+*.fbx   binary
+*.obj   binary
+*.abc   binary
+*.psd   binary
+*.tga   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.exr   binary
+*.hdr   binary
+*.wav   binary
+*.mp3   binary
+*.ogg   binary
+*.dds   binary
+
+# ===== 编译产物（显式标二进制，避免 diff 开销）=====
+*.dll  binary
+*.exe  binary
+*.pdb  binary
+*.lib  binary
+*.obj  binary
+*.pch  binary
+*.ipch binary
+
+# ===== Github 语言统计：不把文档算进主力语言 =====
+*.md     linguist-documentation
+Docs/*   linguist-documentation
